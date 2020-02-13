@@ -1,6 +1,5 @@
 import React from 'react'
-import { render, fireEvent, wait, act } from '@testing-library/react'
-import { getData as mockGetData } from '../api'
+import { render, fireEvent, wait } from '@testing-library/react'
 import axios from 'axios';
 import StarWarsCharacters from './StarWarsCharacters'
 
