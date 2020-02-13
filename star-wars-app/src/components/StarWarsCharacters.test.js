@@ -28,10 +28,8 @@ test('next button and previous button working', async () => {
     fireEvent.click(previousButton)
 
     // check if data has loaded
-    await wait(() => expect(getByText(/luke/i)))
-
-    // make sure data has been called
-    expect(axios.get).toHaveBeenCalledTimes(1)
+    await wait(() => expect(getByText(/next/i)))
+    await wait(() => expect(getByText(/previous/i)))
 })
 
 test('data rendering', async () => {
